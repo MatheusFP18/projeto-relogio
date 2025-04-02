@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Relógio Analógico</title>
 </head>
-<body>
+<body onload="carregar()">
+    <header>
     <h1>Relógio Analógico</h1>
+    </header>
 
+    <div class="container">
     <div class="relogio">
         <div class="riscos">
             <div class="risco" style="transform: rotate(0deg)"><div class="ponto"></div></div>
@@ -31,11 +34,21 @@
             <div class="encaixe"></div>
         </div>
 
-    </div>
-    <div class="digital">--:--:--</div>
-    
-    <footer>Projeto criado pela B7Web e executado por <a href="https://github.com/MatheusFP18">Matheus Petry</a></footer>
+       
 
-    <script src="script.js"></script>
+    </div>
+    
+    <div class="foto">
+        <img id="imagem" src="assets/img/manha.png" alt="Foto da manha">
+    </div>
+    </div>
+
+    <div class="digital">--:--:--</div>
+
+   
+    
+    <div class="rodape"><footer>Projeto criado pela B7Web e executado por<a target="_blank" href="https://github.com/MatheusFP18"> Matheus Petry</a></footer></div>
+
+    <script src="assets/script.js"></script>
 </body>
 </html>
